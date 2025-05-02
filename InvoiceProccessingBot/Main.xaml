@@ -1,0 +1,217 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>UiPath.IntegrationService.Activities.Runtime.Models.FilterBuilder</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.IntegrationService.Activities.Runtime.Models</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>UiPath.IntegrationService.Activities.Runtime.Helpers.TypeDetailsCustomization</x:String>
+      <x:String>UiPath.IntegrationService.Activities.Runtime.Activities</x:String>
+      <x:String>UiPath.Platform.Activities</x:String>
+      <x:String>UiPath.PDF.Activities</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Linq.Expressions</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationNext.Models</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Platform.SyncObjects</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>UiPath.IntegrationService.Activities.Runtime</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>UiPath.PDF.Activities</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
+      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="1309,1630" sap2010:WorkflowViewState.IdRef="Sequence_2">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="x:String" Name="invoiceText" />
+      <Variable x:TypeArguments="x:String" Name="invoiceNumber" />
+      <Variable x:TypeArguments="x:String" Name="amount" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <ui:ReadPDFText PreserveFormatting="{x:Null}" DisplayName="Read PDF Text" FileName="F:\UiPath\TestData\invoice.pdf" sap:VirtualizedContainerService.HintSize="484,114" sap2010:WorkflowViewState.IdRef="ReadPDFText_1" Range="All" Text="[invoiceText]" />
+    <Assign sap:VirtualizedContainerService.HintSize="484,114" sap2010:WorkflowViewState.IdRef="Assign_1">
+      <Assign.To>
+        <OutArgument x:TypeArguments="x:String">[invoiceNumber]</OutArgument>
+      </Assign.To>
+      <Assign.Value>
+        <InArgument x:TypeArguments="x:String">[invoiceText.Split({"Invoice Number: "}, StringSplitOptions.None)(1).Split(Environment.NewLine.ToCharArray(), StringSplitOptions.RemoveEmptyEntries)(0)]</InArgument>
+      </Assign.Value>
+    </Assign>
+    <Assign sap:VirtualizedContainerService.HintSize="484,114" sap2010:WorkflowViewState.IdRef="Assign_2">
+      <Assign.To>
+        <OutArgument x:TypeArguments="x:String">[amount]</OutArgument>
+      </Assign.To>
+      <Assign.Value>
+        <InArgument x:TypeArguments="x:String">[invoiceText.Split({"Amount: "}, StringSplitOptions.None)(1).Split(Environment.NewLine.ToCharArray(), StringSplitOptions.RemoveEmptyEntries)(0)]</InArgument>
+      </Assign.Value>
+    </Assign>
+    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="484,173" sap2010:WorkflowViewState.IdRef="LogMessage_1" Message="[&quot;Invoice Number: &quot; + invoiceNumber + &quot;, Amount: &quot; + amount]" />
+    <uix:NApplicationCard DisplayName="Browser" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="484,1092" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="1d423fc8-7420-475c-acf6-95ed4d716bb2">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="450,852" sap2010:WorkflowViewState.IdRef="Sequence_1">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Invoice Number'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,286" sap2010:WorkflowViewState.IdRef="NTypeInto_1" ScopeIdentifier="1d423fc8-7420-475c-acf6-95ed4d716bb2" Text="[invoiceNumber]" Version="V4">
+              <uix:NTypeInto.Target>
+                <uix:TargetAnchorable BrowserURL="docs.google.com/forms/d/e/1FAIpQLSdnPza7OLXMBSgnXwp-CXpTgYxXLungZ5AHU5zRdrkf0IqFiQ/viewform" CVScreenId="056ade8d-da26-4fb9-96a9-7cb4e3e6d1e7" ContentHash="ums5HV2SMk-xu_KLHmkKLg" CvElementArea="670, 347, 299, 32" CvType="InputBox" DesignTimeRectangle="673, 353, 295, 24" DesignTimeScaleFactor="1" ElementType="InputBox" FuzzySelectorArgument="&lt;webctrl tag='INPUT' type='text' class='whsOnd zHQkBf' aaname='' /&gt;" Guid="95d4a467-4517-4c30-9be0-fa390e6fa4bd" InformativeScreenshot="dec233d4dd61ffbe5f8ae4ea4db7580b.png" IsResponsive="True" Reference="Z-kLYCo490eZit2RmAqk2w/83KOHkUlUkOe2mp8XxEmFQ" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Invoice Data Entry' /&gt;" SearchSteps="FuzzySelector, CV" Version="V5" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target CVScreenId="056ade8d-da26-4fb9-96a9-7cb4e3e6d1e7" CvTextArea="672, 302, 114, 15" CvTextArgument="Invoice Number" CvType="Text" DesignTimeRectangle="673, 299, 112, 24" ElementType="Text" FuzzySelectorArgument="&lt;webctrl parentid='i1' tag='SPAN' type='' class='M7eMe' aaname='Invoice Number' check:innerText='Invoice Number' /&gt;" Guid="aafe1877-65e9-44f9-bf1b-bf055c1288e7" SearchSteps="FuzzySelector, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NTypeInto.Target>
+              <uix:NTypeInto.VerifyOptions>
+                <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionTypeIntoOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionTypeIntoOptions.Retry>
+                  <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                </uix:VerifyExecutionTypeIntoOptions>
+              </uix:NTypeInto.VerifyOptions>
+            </uix:NTypeInto>
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Amount'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,286" sap2010:WorkflowViewState.IdRef="NTypeInto_4" ScopeIdentifier="1d423fc8-7420-475c-acf6-95ed4d716bb2" Text="[amount]" Version="V4">
+              <uix:NTypeInto.Target>
+                <uix:TargetAnchorable BrowserURL="docs.google.com/forms/d/e/1FAIpQLSdnPza7OLXMBSgnXwp-CXpTgYxXLungZ5AHU5zRdrkf0IqFiQ/viewform" CVScreenId="056ade8d-da26-4fb9-96a9-7cb4e3e6d1e7" ContentHash="Yh45GFGL9UWLj8t9Pnqh1Q" CvElementArea="669, 496, 302, 33" CvType="InputBox" DesignTimeRectangle="673, 489, 295, 40" DesignTimeScaleFactor="1" ElementType="InputBox" FuzzySelectorArgument="&lt;webctrl type='' class='aCsJod oJeWuf' tag='DIV' aaname='' /&gt;" Guid="9628232e-a348-4fe4-80fc-578966df2b4e" InformativeScreenshot="2af9a80d5f159604b6a9619a4678ccfa.png" IsResponsive="True" Reference="Z-kLYCo490eZit2RmAqk2w/Fu9bWpay8UeATd9lTduAUg" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Invoice Data Entry' /&gt;" SearchSteps="FuzzySelector, CV" Version="V5" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                      <uix:Target CVScreenId="056ade8d-da26-4fb9-96a9-7cb4e3e6d1e7" CvTextArea="671, 452, 59, 15" CvTextArgument="Amount" CvType="Text" DesignTimeRectangle="673, 449, 56, 24" ElementType="Text" FuzzySelectorArgument="&lt;webctrl parentid='i6' tag='SPAN' type='' class='M7eMe' aaname='Amount' check:innerText='Amount' /&gt;" Guid="b06f443b-f337-4ced-96f6-11788cf18311" SearchSteps="FuzzySelector, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NTypeInto.Target>
+              <uix:NTypeInto.VerifyOptions>
+                <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionTypeIntoOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionTypeIntoOptions.Retry>
+                  <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                </uix:VerifyExecutionTypeIntoOptions>
+              </uix:NTypeInto.VerifyOptions>
+            </uix:NTypeInto>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Submit'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,218" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="1d423fc8-7420-475c-acf6-95ed4d716bb2" Version="V4">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="docs.google.com/forms/d/e/1FAIpQLSdnPza7OLXMBSgnXwp-CXpTgYxXLungZ5AHU5zRdrkf0IqFiQ/viewform" CVScreenId="37507d0e-ccd0-4508-816a-ac3f632237c3" ContentHash="rLepca9H6k2M53_fAYN8GQ" CvElementArea="646, 572, 98, 39" CvTextArea="670, 584, 51, 15" CvTextArgument="Submit" CvType="Button" DesignTimeRectangle="672, 574, 47, 36" DesignTimeScaleFactor="1" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='Submit' tag='SPAN' type='' class='NPEfkd RveJvd snByac' check:innerText='Submit' /&gt;" Guid="2de68b69-585f-44db-a67d-d32273114a07" InformativeScreenshot="032a66a6a37cccdfddf2365d9c65ba95.png" Reference="Z-kLYCo490eZit2RmAqk2w/S69c57_8i0uiCtTVW7BVFA" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Invoice Data Entry' /&gt;" SearchSteps="FuzzySelector, CV" Version="V5" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                      <uix:Target CVScreenId="37507d0e-ccd0-4508-816a-ac3f632237c3" CvElementArea="646, 572, 98, 39" CvTextArea="670, 584, 51, 15" CvTextArgument="Submit" CvType="Button" DesignTimeRectangle="648, 574, 95, 36" ElementType="Button" FuzzySelectorArgument="&lt;webctrl aria-label='Submit' aria-role='button' tag='DIV' type='' class='uArJ5e UQuaGc Y5sE8d VkkpIf QvWxOd' aaname='' check:innerText='Submit' /&gt;" Guid="515d0cb9-5d9c-4901-8c6b-7aba89243e7b" SearchSteps="FuzzySelector, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NClick.Target>
+              <uix:NClick.VerifyOptions>
+                <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionOptions.Retry>
+                  <uix:VerifyExecutionOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionOptions.Timeout>
+                </uix:VerifyExecutionOptions>
+              </uix:NClick.VerifyOptions>
+            </uix:NClick>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="889, 0, 1038, 1087" BrowserType="Chrome" ContentHash="A3wnQBZ40US-X1R9X-HDFg" IconBase64="iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAIGNIUk0AAHolAACAgwAA+f8AAIDpAAB1MAAA6mAAADqYAAAXb5JfxUYAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAA4SURBVDhPY0i32n4AiP+TifeDDMAmQTQeZAbAADIbG0DWQ10DyMGjXhh0XiAHU8WA/eiCxOPtuwEl0a7qam5sogAAAABJRU5ErkJggg==" InformativeScreenshot="092114de64487fa0082791a2e96ae3d3.jpg" Reference="Z-kLYCo490eZit2RmAqk2w/miBZe1PaIk6BrlC2Az_ZNw" Selector="&lt;html app='chrome.exe' url='https://docs.google.com/forms/d/e/1FAIpQLSdnPza7OLXMBSgnXwp-CXpTgYxXLungZ5AHU5zRdrkf0IqFiQ/viewform' /&gt;" Url="https://docs.google.com/forms/d/e/1FAIpQLSdnPza7OLXMBSgnXwp-CXpTgYxXLungZ5AHU5zRdrkf0IqFiQ/viewform" Version="V2" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+  </Sequence>
+</Activity>
